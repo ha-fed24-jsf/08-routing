@@ -18,7 +18,8 @@ const router = createHashRouter([
 				Component: Home
 			},
 			{
-				path: "/destination",
+				// URL param "destId" är valfri eftersom vi använder frågetecken
+				path: "/destination/:destId?",
 				Component: Destination
 			}
 		]

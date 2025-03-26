@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { Link, Outlet } from 'react-router'
+import { NavLink, Outlet } from 'react-router'
 import './App.css'
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
 			<header>
 				<h1> Go away! </h1>
 				<div className="links">
-					<Link to="/"> Hem </Link>
-					<Link to="/destination"> Resmål </Link>
+					<NavLink to="/"> Hem </NavLink>
+					<NavLink to="/destination"> Resmål </NavLink>
 				</div>
 			</header>
 			<main>
