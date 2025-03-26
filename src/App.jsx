@@ -8,7 +8,7 @@ function App() {
 	return (
 		<div className="app">
 			<header>
-				Go away!
+				<h1> Go away! </h1>
 				<div className="links">
 					<Link to="/"> Hem </Link>
 					<Link to="/destination"> Resmål </Link>
