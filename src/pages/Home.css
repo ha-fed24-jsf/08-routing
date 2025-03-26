@@ -1,0 +1,12 @@
+.home {
+
+	.destinations {
+		display: flex;
+		flex-direction: row;
+
+		> a {
+			padding: 1em;
+		}
+	}
+
+}

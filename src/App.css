@@ -4,6 +4,22 @@ header {
 	text-align: center;
 	padding: 20px;
 	margin-bottom: 20px;
+
+	.links > a {
+		padding: 10px 20px;
+		background-color: #3498db;
+		color: white;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: #2980b9;
+		}
+	}
+}
+main {
+	padding: 0 1em;
 }
 
 .navigation {

@@ -1,4 +1,5 @@
 // import { useState } from 'react'
+import { Link, Outlet } from 'react-router'
 import './App.css'
 
 function App() {
@@ -6,7 +7,16 @@ function App() {
 
 	return (
 		<div className="app">
-			React Router demo
+			<header>
+				Go away!
+				<div className="links">
+					<Link to="/"> Hem </Link>
+					<Link to="/destination"> Resmål </Link>
+				</div>
+			</header>
+			<main>
+				<Outlet />
+			</main>
 		</div>
 	)
 }
