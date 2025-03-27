@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createHashRouter, RouterProvider } from 'react-router'
 import Home from './pages/Home.jsx'
 import Destination from './pages/Destination.jsx'
+import Book from './pages/Book.jsx'
 
 // Använd HASH ROUTER här
 const router = createHashRouter([
@@ -21,6 +22,10 @@ const router = createHashRouter([
 				// URL param "destId" är valfri eftersom vi använder frågetecken
 				path: "/destination/:destId?",
 				Component: Destination
+			},
+			{
+				path: "/book/:destId",
+				Component: Book
 			}
 		]
 	}

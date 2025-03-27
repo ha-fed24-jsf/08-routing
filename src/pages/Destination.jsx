@@ -1,8 +1,9 @@
-import { useParams } from 'react-router'
+import { useNavigate, useParams } from 'react-router'
 import { destinations } from '../data/destinations.js'
 
 const Destination = () => {
 	const { destId } = useParams()
+	const navigate = useNavigate()
 	// console.log('Destination: destId=', destId)
 
 	const place = destinations.find(d => d.id === destId)
@@ -16,6 +17,12 @@ const Destination = () => {
 		)
 	}
 
+	// <Link to={'/book/' + place.id}> Boka </Link>
+	const handleBook = () => {
+		console.log('Destination: place.id = ', place.id)
+		navigate('/book/' + place.id)
+	}
+
 	return (
 		<div className="destination">
 			<h2> {place.name} </h2>
@@ -27,6 +34,7 @@ const Destination = () => {
 					</section>
 				))}
 			</div>
+			<button onClick={handleBook}> Boka resa </button>
 		</div>
 	)
 }
